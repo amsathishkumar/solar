@@ -47,6 +47,8 @@ head
       button#defaultOpen.tablinks(onclick="actionTigger(event, 'Device')") Device
       button.tablinks(onclick="actionTigger(event, 'Invertor')") Invertor
       button.tablinks(onclick="actionTigger(event, 'Site')") Site
+      button.tablinks(onclick="actionTigger(event, 'logo')")
+          img.img-rounded(width="370",height="200", src='http://localhost:4000/images/triologo.jpg')
     #Device.tabcontent
       h3 Device
       include piechart
@@ -56,6 +58,9 @@ head
     #Site.tabcontent
       h3 Site
       p Site Details.
+    #logo.tabcontent
+      h3 TrioSolar
+      p Chennai.
     script.
       function actionTigger(evt, actionName) {
       var i, tabcontent, tablinks;
